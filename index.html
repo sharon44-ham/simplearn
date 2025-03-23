@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpLEarn</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #919cdf;
+            text-align: center;
+        }
+        header {
+            background: #555a8f;
+            color: rgb(222, 214, 214);
+            padding: 20px;
+            font-size: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .tagline {
+            font-size: 18px;
+            font-style: italic;
+            opacity: 0.8;
+        }
+        .career-paths {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        .paths-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .path-card {
+            background: rgb(119, 134, 194);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(154, 141, 201, 0.953);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 250px;
+        }
+        .path-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background: #555a8f;
+            color: rgb(10, 10, 10);
+            padding: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">simpLEarn</div>
+        <div class="tagline">simple-learn</div>
+    </header>
+    
+    <section class="career-paths">
+        <h2>Confused? Here are all the best free resources you are searching for</h2>
+        <div class="paths-container">
+            <div class="path-card" onclick="redirectTo('https://youtu.be/zJSY8tbf_ys')">
+                <h3>Frontend Development</h3>
+            </div>
+            <div class="path-card" onclick="redirectTo('https://youtu.be/vfaRzV3P92o')">
+                <h3>Backend Development </h3>
+            </div>
+           
+            <div class="path-card" onclick="redirectTo('https://youtu.be/wQQR60KtnFY')">
+                <h3>Data Analytics</h3>
+            </div>
+            <div class="path-card" onclick="redirectTo('https://youtu.be/LvC68w9JS4Y')">
+                <h3>Machine Learning </h3>
+            </div>
+            <div class="path-card" onclick="redirectTo('https://youtu.be/MqffbpjhriQ')">
+                <h3>Artificial Intelligence</h3>
+            </div>
+            <div class="path-card" onclick="redirectTo('https://youtu.be/j5Zsa_eOXeY')">
+                <h3>DevOps</h3>
+            </div>
+            <div class="path-card" onclick="redirectTo('https://youtu.be/vA5TTz6BXhY')">
+                <h3>Git Version Control</h3>
+            </div>
+            <div class="path-card" onclick="redirectTo('https://youtu.be/RBSGKlAvoiM')">
+                <h3>Data Structures & Algorithms (DSA)</h3>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 simpLEarn All rights reserved .</p>
+    </footer>
+    
+    <script>
+        function redirectTo(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #919cdf;
+            text-align: center;
+        }
+        header {
+            background: #555a8f;
+            color: rgb(222, 214, 214);
+            padding: 20px;
+            font-size: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .tagline {
+            font-size: 18px;
+            font-style: italic;
+            opacity: 0.8;
+        }
+        .career-paths {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        .paths-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .path-card {
+            background: rgb(119, 134, 194);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(154, 141, 201, 0.953);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 250px;
+        }
+        .path-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background: #555a8f;
+            color: rgb(10, 10, 10);
+            padding: 10px;
+            margin-top: 50px;
+        }
+  
